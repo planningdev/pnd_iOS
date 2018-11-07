@@ -1,0 +1,5 @@
+github "ReactiveX/RxSwift" "4.4.0"
+github "kishikawakatsumi/KeychainAccess" "v3.1.2"
+github "malcommac/SwiftDate" "5.0.13"
+github "onevcat/Kingfisher" "4.10.1"
+github "patchthecode/JTAppleCalendar" "7.1.6"

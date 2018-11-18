@@ -8,7 +8,18 @@
 
 import Foundation
 
-@objc public enum PageMenuControllerDirection: Int {
+@objc public enum PageMenuNavigationDirection: Int {
     case forward
     case reverse
+}
+
+extension EMPageViewControllerNavigationDirection {
+    var toPageMenuNavigationDirection: PageMenuNavigationDirection {
+        switch self {
+        case .forward:
+            return .forward
+        case .reverse:
+            return .reverse
+        }
+    }
 }

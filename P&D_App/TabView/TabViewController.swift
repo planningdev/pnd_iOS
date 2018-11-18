@@ -13,7 +13,7 @@ import RxCocoa
 class TabViewController: UITabBarController {
 
     private let disposeBag = DisposeBag()
-    private let url = URL(string: "")
+    private let url = URL(string: "https://tokyo1.prota.space/16f1753792b04b377fd0657b407daf80/webhook/incoming/6ba20f52327411e889d4b827eb8bc1cb?_ak=MTZmMTc1Mzc5MmIwNGIzNzdmZDA2NTdiNDA3ZGFmODB8NmRkYmYyYjYzNGU2MmIyYWVlYTViMjhhMjhhYjlmN2Q2NDEyNDMyNQ")
 
     var button: UIButton {
         let button = UIButton(type: .custom)

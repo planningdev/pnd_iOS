@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		75AF89642193D65700AA1F37 /* TabMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AF89632193D65700AA1F37 /* TabMenuView.swift */; };
 		75D1CDA52191DFE600B525D0 /* PageMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 75D1CDA32191DFE600B525D0 /* PageMenu.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		75D1CDAC2191E01D00B525D0 /* PageMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D1CDAB2191E01D00B525D0 /* PageMenuController.swift */; };
 		75D1CDAE2191E04500B525D0 /* PageMenuControllerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D1CDAD2191E04500B525D0 /* PageMenuControllerDataSource.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		75AF89632193D65700AA1F37 /* TabMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabMenuView.swift; sourceTree = "<group>"; };
 		75D1CDA02191DFE600B525D0 /* PageMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PageMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		75D1CDA32191DFE600B525D0 /* PageMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PageMenu.h; sourceTree = "<group>"; };
 		75D1CDA42191DFE600B525D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				75D1CDC22192BBFA00B525D0 /* RoundRectCursorView.swift */,
 				75D1CDC42192BE6D00B525D0 /* UnderlineCursorView.swift */,
 				75D1CDC62192C32700B525D0 /* TabMenuItemCell.swift */,
+				75AF89632193D65700AA1F37 /* TabMenuView.swift */,
 			);
 			path = TabMenu;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 				75D1CDB02191E05700B525D0 /* PageMenuControllerDelegate.swift in Sources */,
 				75D1CDC72192C32700B525D0 /* TabMenuItemCell.swift in Sources */,
 				75D1CDC32192BBFA00B525D0 /* RoundRectCursorView.swift in Sources */,
+				75AF89642193D65700AA1F37 /* TabMenuView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		75177B5C21A6730D0086E103 /* PageMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75177B5B21A672EC0086E103 /* PageMenu.framework */; };
+		75177B5D21A6730D0086E103 /* PageMenu.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 75177B5B21A672EC0086E103 /* PageMenu.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		756EB859219037DB0067D433 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756EB858219037DB0067D433 /* AppDelegate.swift */; };
 		756EB85E219037DB0067D433 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 756EB85C219037DB0067D433 /* Home.storyboard */; };
 		756EB861219037DB0067D433 /* P_D_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 756EB85F219037DB0067D433 /* P_D_App.xcdatamodeld */; };
@@ -41,6 +43,23 @@
 		756EB8D22191691D0067D433 /* DayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756EB8D12191691D0067D433 /* DayCell.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		75177B5A21A672EC0086E103 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75177B5621A672EC0086E103 /* PageMenu.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 75D1CDA02191DFE600B525D0;
+			remoteInfo = PageMenu;
+		};
+		75177B5E21A6730D0086E103 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75177B5621A672EC0086E103 /* PageMenu.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 75D1CD9F2191DFE600B525D0;
+			remoteInfo = PageMenu;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		756EB89B21905A9F0067D433 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -48,6 +67,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				75177B5D21A6730D0086E103 /* PageMenu.framework in Embed Frameworks */,
 				756EB8C92191531E0067D433 /* KeychainAccess.framework in Embed Frameworks */,
 				756EB8CF219168C20067D433 /* SwiftDate.framework in Embed Frameworks */,
 				756EB8AD21905C2C0067D433 /* RxCocoa.framework in Embed Frameworks */,
@@ -62,6 +82,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		75177B5621A672EC0086E103 /* PageMenu.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PageMenu.xcodeproj; path = PageMenu/PageMenu.xcodeproj; sourceTree = SOURCE_ROOT; };
 		756EB855219037DB0067D433 /* P&D_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "P&D_App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		756EB858219037DB0067D433 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		756EB85D219037DB0067D433 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
@@ -96,6 +117,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75177B5C21A6730D0086E103 /* PageMenu.framework in Frameworks */,
 				756EB8C82191531E0067D433 /* KeychainAccess.framework in Frameworks */,
 				756EB8CE219168C20067D433 /* SwiftDate.framework in Frameworks */,
 				756EB8AC21905C2C0067D433 /* RxCocoa.framework in Frameworks */,
@@ -109,6 +131,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		75177B5721A672EC0086E103 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75177B5B21A672EC0086E103 /* PageMenu.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		756EB84C219037DB0067D433 = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +171,7 @@
 				756EB864219037DE0067D433 /* LaunchScreen.storyboard */,
 				756EB867219037DE0067D433 /* Info.plist */,
 				756EB85F219037DB0067D433 /* P_D_App.xcdatamodeld */,
+				75177B5621A672EC0086E103 /* PageMenu.xcodeproj */,
 			);
 			path = "P&D_App";
 			sourceTree = "<group>";
@@ -238,6 +269,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				75177B5F21A6730D0086E103 /* PBXTargetDependency */,
 			);
 			name = "P&D_App";
 			productName = "P&D_App";
@@ -270,12 +302,28 @@
 			mainGroup = 756EB84C219037DB0067D433;
 			productRefGroup = 756EB856219037DB0067D433 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 75177B5721A672EC0086E103 /* Products */;
+					ProjectRef = 75177B5621A672EC0086E103 /* PageMenu.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				756EB854219037DB0067D433 /* P&D_App */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		75177B5B21A672EC0086E103 /* PageMenu.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = PageMenu.framework;
+			remoteRef = 75177B5A21A672EC0086E103 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		756EB853219037DB0067D433 /* Resources */ = {
@@ -341,6 +389,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		75177B5F21A6730D0086E103 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PageMenu;
+			targetProxy = 75177B5E21A6730D0086E103 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		756EB85C219037DB0067D433 /* Home.storyboard */ = {
@@ -481,6 +537,7 @@
 		756EB86B219037DE0067D433 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CWW3CV2X72;
@@ -504,6 +561,7 @@
 		756EB86C219037DE0067D433 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CWW3CV2X72;

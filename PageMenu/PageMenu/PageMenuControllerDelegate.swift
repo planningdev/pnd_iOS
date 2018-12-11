@@ -9,11 +9,11 @@
 import Foundation
 
 @objc public protocol PageMenuControllerDelegate: class {
-    @objc optional func pageMenuController(_ pageMenuController: PageMenuController, willScrollToPageAtIndex index: Int, direction: PageMenuControllerDirection)
+    @objc optional func pageMenuController(_ pageMenuController: PageMenuController, willScrollToPageAtIndex index: Int, direction: PageMenuNavigationDirection)
 
-    @objc optional func pageMenuController(_ pageMenuController: PageMenuController, scrollingProgress progress: CGFloat, direction: PageMenuControllerDirection)
+    @objc optional func pageMenuController(_ pageMenuController: PageMenuController, scrollingProgress progress: CGFloat, direction: PageMenuNavigationDirection)
 
-    @objc optional func pageMenuController(_ pageMenuController: PageMenuController, didScrollToPageAtIndex index: Int, direction: PageMenuControllerDirection)
+    @objc optional func pageMenuController(_ pageMenuController: PageMenuController, didScrollToPageAtIndex index: Int, direction: PageMenuNavigationDirection)
 
-    @objc optional func pageMenuController(_ pageMenuController: PageMenuController, didScrollMenuItem index: Int, direction: PageMenuControllerDirection)
+    @objc optional func pageMenuController(_ pageMenuController: PageMenuController, didSelectMenuItem index: Int, direction: PageMenuNavigationDirection)
 }

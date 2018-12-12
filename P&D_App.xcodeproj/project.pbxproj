@@ -41,6 +41,8 @@
 		756EB8CE219168C20067D433 /* SwiftDate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 756EB8CC219168BC0067D433 /* SwiftDate.framework */; };
 		756EB8CF219168C20067D433 /* SwiftDate.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 756EB8CC219168BC0067D433 /* SwiftDate.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		756EB8D22191691D0067D433 /* DayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756EB8D12191691D0067D433 /* DayCell.swift */; };
+		FBDC087721C0E6C500EED1FD /* CreateScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDC087621C0E6C500EED1FD /* CreateScheduleView.swift */; };
+		FBE8C9D921C0EA5D001B6B26 /* Eureka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBE8C9D821C0EA5D001B6B26 /* Eureka.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +112,8 @@
 		756EB8CA219153B90067D433 /* KeyChainUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainUtil.swift; sourceTree = "<group>"; };
 		756EB8CC219168BC0067D433 /* SwiftDate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftDate.framework; path = Carthage/Build/iOS/SwiftDate.framework; sourceTree = "<group>"; };
 		756EB8D12191691D0067D433 /* DayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCell.swift; sourceTree = "<group>"; };
+		FBDC087621C0E6C500EED1FD /* CreateScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateScheduleView.swift; sourceTree = "<group>"; };
+		FBE8C9D821C0EA5D001B6B26 /* Eureka.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Eureka.framework; path = Carthage/Build/iOS/Eureka.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +121,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBE8C9D921C0EA5D001B6B26 /* Eureka.framework in Frameworks */,
 				75177B5C21A6730D0086E103 /* PageMenu.framework in Frameworks */,
 				756EB8C82191531E0067D433 /* KeychainAccess.framework in Frameworks */,
 				756EB8CE219168C20067D433 /* SwiftDate.framework in Frameworks */,
@@ -182,6 +187,7 @@
 				756EB87121903B560067D433 /* CalendarViewController.swift */,
 				756EB87321903B5F0067D433 /* Calendar.storyboard */,
 				756EB8D0219169070067D433 /* View */,
+				FBDC087521C0E68100EED1FD /* CreateScheduleView */,
 			);
 			path = CalendarView;
 			sourceTree = "<group>";
@@ -216,6 +222,7 @@
 		756EB8A321905BE20067D433 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FBE8C9D821C0EA5D001B6B26 /* Eureka.framework */,
 				756EB8CC219168BC0067D433 /* SwiftDate.framework */,
 				756EB8C6219153180067D433 /* KeychainAccess.framework */,
 				756EB8C2219138500067D433 /* JTAppleCalendar.framework */,
@@ -251,6 +258,14 @@
 				756EB8D12191691D0067D433 /* DayCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		FBDC087521C0E68100EED1FD /* CreateScheduleView */ = {
+			isa = PBXGroup;
+			children = (
+				FBDC087621C0E6C500EED1FD /* CreateScheduleView.swift */,
+			);
+			path = CreateScheduleView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -357,6 +372,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/JTAppleCalendar.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/KeychainAccess.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftDate.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Eureka.framework",
 			);
 			outputFileListPaths = (
 			);
@@ -377,6 +393,7 @@
 				756EB88521904EC10067D433 /* TabViewController.swift in Sources */,
 				756EB88021904E070067D433 /* HomeViewController.swift in Sources */,
 				756EB87221903B560067D433 /* CalendarViewController.swift in Sources */,
+				FBDC087721C0E6C500EED1FD /* CreateScheduleView.swift in Sources */,
 				756EB861219037DB0067D433 /* P_D_App.xcdatamodeld in Sources */,
 				756EB8BD219132C60067D433 /* UITextField+Extension.swift in Sources */,
 				756EB8BB219130F80067D433 /* UIButton+Extension.swift in Sources */,
@@ -540,7 +557,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CWW3CV2X72;
+				DEVELOPMENT_TEAM = 56GPH5VFNS;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -564,7 +581,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CWW3CV2X72;
+				DEVELOPMENT_TEAM = 56GPH5VFNS;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",

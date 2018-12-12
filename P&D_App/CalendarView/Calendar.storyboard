@@ -151,10 +151,10 @@
             </objects>
             <point key="canvasLocation" x="152.80000000000001" y="189.3553223388306"/>
         </scene>
-        <!--View Controller-->
+        <!--Create Schedule View Controller-->
         <scene sceneID="o62-Gp-ru1">
             <objects>
-                <viewController storyboardIdentifier="addScheduleView" id="kGl-Ij-IS2" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="addScheduleView" id="kGl-Ij-IS2" customClass="CreateScheduleViewController" customModule="P_D_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nY7-ap-DIJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

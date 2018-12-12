@@ -135,7 +135,11 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Calendar" image="Calendar" id="BpJ-fV-ZuW"/>
                     <navigationItem key="navigationItem" id="xTV-ZQ-u5Y">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="MkU-DF-GQB"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="MkU-DF-GQB">
+                            <connections>
+                                <action selector="goScheduleView:" destination="VMh-rJ-tnm" id="bna-Kh-1VM"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -146,6 +150,37 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fos-ja-8aN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="152.80000000000001" y="189.3553223388306"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="o62-Gp-ru1">
+            <objects>
+                <viewController storyboardIdentifier="addScheduleView" id="kGl-Ij-IS2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nY7-ap-DIJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oSs-ik-Utl">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="S5b-yb-cvN">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="qlN-XO-bRf">
+                                            <connections>
+                                                <segue destination="zfw-99-byk" kind="unwind" unwindAction="backScheduleView:" id="MBh-dH-mC0"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="DST-WY-Azt"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Jd-BE-Boq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="zfw-99-byk" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="153" y="950"/>
         </scene>
         <!--Goods-->
         <scene sceneID="BCT-iy-Ebl">

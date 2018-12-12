@@ -26,6 +26,14 @@ class CalendarViewController: UIViewController {
         self.navigationItem.title = "\(Date().year)年 " + "\(Date().month)月"
     }
 
+    // MARK: - Actions
+    @IBAction func goScheduleView(_ sender: Any) {
+        let next = storyboard!.instantiateViewController(withIdentifier: "addScheduleView")
+        self.present(next, animated: true, completion: nil)
+    }
+
+    @IBAction func backScheduleView(_ sender: UIStoryboardSegue) {}
+
     /*
     // MARK: - Navigation
 

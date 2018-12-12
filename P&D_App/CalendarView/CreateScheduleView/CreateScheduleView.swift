@@ -12,19 +12,32 @@ import Eureka
 class CreateScheduleViewController: FormViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        form +++ Section("Section1")
+        form
+            +++ Section("")
             <<< TextRow(){ row in
-                row.title = "Text Row"
-                row.placeholder = "Enter text here"
+                row.title = "タイトル"
+                row.placeholder = "Enter title here"
             }
-            <<< PhoneRow(){
-                $0.title = "Phone Row"
-                $0.placeholder = "And numbers here"
+            <<< TextRow(){ row in
+                row.title = "場所"
+                row.placeholder = "Enter place here"
             }
-            +++ Section("Section2")
+            +++ Section("時間")
+            <<< SwitchRow(){
+                $0.title = "終日"
+            }
             <<< DateRow(){
-                $0.title = "Date Row"
+                $0.title = "開始"
                 $0.value = Date(timeIntervalSinceReferenceDate: 0)
+
+            }
+            <<< DateRow(){
+                $0.title = "終了"
+                $0.value = Date(timeIntervalSinceReferenceDate: 0)
+            }
+            +++ Section("メモ")
+            <<< TextAreaRow(){
+                $0.placeholder = "memo"
         }
     }
 }
